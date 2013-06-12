@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name='app_name'>
+        Crud In Ruboto
+    </string>
+
+<string name="registration_text">Registration From</string>
+    <string name="username_text">UserName</string>
+    <string name="password_text">Password</string>
+    <string name="logininfo_text">LoginInfo</string>
+    <string name="personalinfo_text">Personal Information</string>
+    <string name="firstname_text">First Name</string>
+    <string name="lastname_text">Last Name</string>
+    <string name="profilepicture_text">Profile Picture</string>
+    <string name="countryname_text">Country Name</string>
+    <string name="save_text">Save</string>
+    <string name="reset_text">Reset</string>
+    <string name="phone_text">Phone Number</string>
+    <string name="email_text">Email</string>
+    <string name="welcome_text">Welcome Message</string>
+
+</resources>

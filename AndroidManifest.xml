@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest package='org.ruboto.rubotocrud.crud_in_ruboto' android:versionCode='1' android:versionName='1.0' xmlns:android='http://schemas.android.com/apk/res/android'>
+    <application android:hardwareAccelerated='true' android:icon='@drawable/ic_launcher' android:label='@string/app_name' android:largeHeap='true'>
+        <activity android:label='@string/app_name' android:name='CrudInRubotoActivity' android:configChanges="keyboardHidden|orientation" >
+            <intent-filter>
+                <action android:name='android.intent.action.MAIN'/>
+                <category android:name='android.intent.category.LAUNCHER'/>
+            </intent-filter>
+        </activity>
+        <activity android:exported='false' android:name='org.ruboto.RubotoActivity'/>
+        <activity android:exported='false' android:name='org.ruboto.RubotoDialog' android:theme='@android:style/Theme.Dialog'/>
+        <service android:exported='false' android:name='org.ruboto.RubotoService'/>
+        <activity android:name='Newperson' android:configChanges="keyboardHidden|orientation" >
+            <intent-filter>
+                <action android:name='android.intent.action.NEWPERSON'/>
+                <category android:name='android.intent.category.DEFAULT'/>
+            </intent-filter>
+        </activity>
+          
+        <activity android:name='Editperson' android:configChanges="keyboardHidden|orientation" >
+			 <intent-filter>
+                <action android:name='android.intent.action.EDITPERSON'/>
+                <category android:name='android.intent.category.DEFAULT'/>
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-sdk android:minSdkVersion='17' android:targetSdkVersion='17'/>
+</manifest>

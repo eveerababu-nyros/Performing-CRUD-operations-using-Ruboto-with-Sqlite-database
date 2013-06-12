@@ -1,0 +1,6 @@
+source "http://rubygems.org"
+
+gem 'activerecord'
+gem 'activerecord-jdbc-adapter'
+gem 'activerecord-jdbcsqlite3-adapter'
+gem 'sqldroid', '~>1.0.0.RC11'
