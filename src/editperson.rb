@@ -69,10 +69,6 @@ class OnClickListener
 
 	def onClick(view)
 
-			puts "##$$$$$$$$$$$$$$$$$$$$$$$$$##########"
-			puts $user_id
-			puts $user_id.class
-			puts $user_id.to_i
 		case view.getText().to_s
 			when 'Edit'
 				@person_name = @activity.findViewById(Ruboto::R::id::edit_Username)
@@ -109,7 +105,8 @@ class OnClickListener
 				i = android.content.Intent.new
 				i.setClassName($package_name, 'org.ruboto.rubotocrud.crud_in_ruboto.CrudInRubotoActivity')
 				i.putExtra('personmain',"hello")
-				@activity.startActivity(i)	
+				@activity.startActivity(i)
+				@activity.finish()
 
 				  dialog.dismiss
 				end
