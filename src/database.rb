@@ -21,17 +21,13 @@ class Database
 
     ActiveRecord::Base.establish_connection(ActiveRecord::Base.configurations[:production])
 
-
-	puts "*****************************"
-	puts db_dir
   end
 
   def self.migrate(context)
     src_dir = 'file:' + context.package_manager.getApplicationInfo($package_name, 0).sourceDir + '!/'
     migration_path = File.expand_path("#{src_dir}/migrate")
 
-	puts "########################################"
-	puts migration_path
+	
     puts "Looking for migration scripts in #{migration_path}"
     migrator = ActiveRecord::Migrator.new(:up, migration_path)
     if migrator.pending_migrations.size > 0
